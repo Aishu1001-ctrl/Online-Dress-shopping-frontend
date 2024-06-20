@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ODS Company</title>
+	  <link href="style.css" rel="stylesheet">
+      <link href="c4.css" rel="stylesheet" type="text/css">
+</head>
+	<script>
+	function stickyMenu() {
+		var sticky=document.getElementById('sticky');
+		if(window.pageYOffSet>220){
+			sticky.classList.add('sticky');
+		}
+		else{
+			sticky.classList.remove('sticky');
+		}
+	}
+   window.onscroll=function(){
+	    stickyMenu();
+    }
+    </script>
+
+<body>
+	<!--navigation bar begin-->
+	<div class="header">
+	<div class="navbar">
+		<p>ODS<br>Company</p>
+		
+		<ul>
+		  <li class="a-menu"><a href="Online.html" class="btn btn-info" role="button">Home</a></li>
+		  <li class="a-menu"><a href="Cart.html" class="btn btn-info" role="button">Cart</a></li>
+		  <li class="a-menu"><a href="About us.html" class="btn btn-info" role="button">About us</a></li>
+		  <li class="a-menu"><a href="Contact us.html" class="btn btn-info" role="button">Contact us</a></li>
+		  <li class="a-menu"><a href="Help.html" class="btn btn-info" role="button">Help</a></li>
+		  <li class="a-menu"><a href="Login.html" class="btn btn-info" role="button">Login</a></li>
+		</ul>
+		
+		
+		<select name="select">
+		  <option value="1">Categories</option>
+		  <option value="2">Men</option>
+		  <option value="3">Women</option>
+		  <option value="4">Kids</option>
+	    </select>
+     <span class="search">
+	 <input type="search" placeholder="Search...">
+     </span></div>
+	 </div>
+	 <div class="navbar-b"></div>
+	 <div class="dropdown"></div>
+		
+	<!--navigation bar end-->
+	
+	<!--example product-->
+	<div class="flex-box"></div>
+    <div class="left"></div>
+    <div class="big-img">
+       <img src="L.jpg" height="306">
+    </div>
+		
+		
+		 <div class="right"></div>
+		 <div class="url"> Home > Men </div><br>
+		 <div class="price"></div>
+		 <div class="url"> Price : $40 </div><br>
+		 <div class="size"></div>
+		 <div class="size"></div>
+		 <div class="url"><p> Size : </p></div>
+		
+		  <select name="select">
+		  <option value="1">S</option>
+		  <option value="2">M</option>
+		  <option value="3">L</option>
+		  <option value="4">XL</option>
+		  <option value="5">XXL</option>    
+	      </select>
+		
+         <div class="quantity"></div>
+		 <div class="url"> <p>Quantity :</p></div>
+		 <div class="url"></div> <input type="number" min="1" max="5" value="1">
+        
+		
+		 <div class="btn-box">
+              <button class="cart-btn">add to Cart</button>
+              <button class="buy-btn">Buy Now</button>
+         </div>
+    
+	   <div class="images">
+	   </div>
+			  
+		 <table>
+		 <tbody>
+		 <tr>
+		 <td>
+             <div class="small-img"> 
+             <img src="M.jpg" alt=""  onclick="showImg(this.src)" >
+             </div>
+			 </td>
+			 <td>	
+		     <div class="small-img"> 
+             <img src="L.jpg" alt=""  onclick="showImg(this.src)">
+             </div>
+	    	 </td>
+			 <td>
+             <div class="small-img">
+             <img src="K.jpg" alt="" onclick="showImg(this.src)" >
+             </div>
+			 </td>
+			 <td>
+			 <div class="small-img">
+			 <img src="P.jpg" alt=""  onclick="showImg(this.src)" >
+			 </div>
+			 </td>
+				
+		     </tr>
+	         </tbody>
+			 </table>
+	
+	<script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+      </script>
+	
+	 <!--women-->
+	
+		<div class="deals-container" id="women">
+			<div class="parallax">
+			<div class="title"> Women</div>
+			</div>
+	        </div>
+	
+	<!--1-->
+	     <table>
+		 <tbody>
+		 <tr>
+		 <td>	  
+			<div class="items">
+				  
+					<div class="images">
+						<img src="H.jpg"   class="item-image-size" style="width: 300px">
+					<br/>
+				    </div>
+					<div class="item-select">
+						<p>Luxury Star Print T Shirt</p>
+						<p>Price : $50 </p>
+					</div>
+					<lable>Qty:</lable>
+					<select class="item-select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br/>
+				
+				    <lable>Size:</lable>
+					<select class="item-select">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+						<option>XXL</option>
+					</select><br/>
+				
+				
+					<button class="Buy-btn">Buy</button>
+				    <button class="Cart-btn">Add to Cart</button>
+			</div>
+			</td>
+			<td>
+				
+		<!--2-->
+				<div class="items">
+					
+					<div class="images">
+						<img src="F.jpg" width="298" height="307"  class="item-image-size" style="width: 300px">
+					
+					<br/>
+				    </div>
+					<div class="item-select">
+						<p>Pakistani Dress Saree Vestido Indiano</p>
+						<p>Price : $60 </p>
+					</div>
+					<lable>Qty:</lable>
+					<select class="item-select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br/>
+				
+				    <lable>Size:</lable>
+					<select class="item-select">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+						<option>XXL</option>
+					</select><br/>
+				
+				
+					<button class="Buy-btn">Buy</button>
+				    <button class="Cart-btn">Add to Cart</button>
+			</div>
+			</td>
+		    </tr>
+	        </tbody>
+			</table>
+	
+	<!--kids-->
+       
+	<div class="deals-container" id="kids">
+			  <div class="parallax">
+			<div class="title"> Kids</div>
+			</div>
+	        </div>
+        <!--1-->
+	<table>
+	<tbody>
+	<tr>
+		<td width="308">	  
+		<div class="items">
+				  
+					<div class="images">
+						<img src="G.jpg"   class="item-image-size" style="width: 300px">
+					<br/>
+				    </div>
+					<div class="item-select">
+						<p>1-5 Years Girl Sleeveless Floral Fashion Dress</p>
+						<p>Price : $80 </p>
+					</div>
+					<lable>Qty:</lable>
+					<select class="item-select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br/>
+				
+				    <lable>Size:</lable>
+					<select class="item-select">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+						<option>XXL</option>
+					</select><br/>
+				
+					<button class="Buy-btn">Buy</button>
+				    <button class="Cart-btn">Add to Cart</button>
+			</div>
+			</td>
+		
+		<!--2-->
+		
+			<td width="300">
+				<div class="items">
+				  
+					<div class="images">
+						<img src="N.jpg"  class="item-image-size" style="width: 300px">
+					<br/>
+				    </div>
+					<div class="item-select">
+						<p>2pcs Clothing Cotton Sets </p>
+						<p>Price : $70 </p>
+					</div>
+					<lable>Qty:</lable>
+					<select class="item-select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select><br/>
+				
+				<lable>Size:</lable>
+					<select class="item-select">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+						<option>XXL</option>
+					</select><br/>
+				
+				
+					<button class="Buy-btn">Buy</button>
+				<button class="Cart-btn">Add to Cart</button>
+				</div>
+			
+		</td>
+		</tr>
+	    </tbody>
+		</table>
+       
+	<!--related items-->
+
+	<div class="related"></div>
+         <h2>related items</h2>
+
+       <script>
+
+            function clickme(smallImg){
+
+                var fullImg = document.getElementById("imagebox");
+                fullImg.src = smallImg.src;
+
+			}
+       </script>
+
+	
+	<table>
+	<tbody>
+	<tr>
+	<td><img src="O.jpg" width="332" height="362" /><p>Retro Classic Simple T Shirt</p>
+                     <p>USD $95.00</p></td>
+				
+				<td><img src="Q.jpg" width="332" height="362" /><p>Polka Dot Long Sleeve Frocks</p>
+                     <p>USD $100.00</p></td>
+				
+				<td><img src="E.jpg" width="268" height="364"/><p>French Style Paryt Robe Dress</p>
+              <p>USD $120.00</p></td>
+				
+				<td><img src="R.jpg" width="332" height="362"/><p>Vest Suit Summer Kit</p>
+                     <p>USD $120.00</p></td> 
+				
+				
+		  </tr>
+		  </tbody>
+	      </table>
+		
+    <!--discount-->
+	
+		<div class="disc-container" id="disc">
+			  <div class="parallax">
+			  <div class="title">Discount</div>
+			  </div>
+				<div class="disc">
+					Buy $300 worth of Men dress and get 10% off<br>
+					<button class="get-btn">Get offer</button>
+				</div>
+				<div class="disc">
+					Buy $450 worth of Women dress and get 5% off<br>
+					<button class="get-btn">Get offer</button>
+				</div>
+				<div class="disc">
+					Buy $200 worth of Kids dress and get 20% off<br>
+					<button class="get-btn">Get offer</button>
+				</div>
+				</div>
+
+	
+</body>	
+	</html>
+	   
